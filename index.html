@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Rider Light Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(240, 246, 212);
+   
+}
+
+.light-container {
+    display: flex;
+    gap: 5px;
+}
+
+.light {
+    width: 100px;
+    height: 50px;
+    background-color:white;
+    border: 2px solid black;
+    transition: opacity 0.3s;
+    
+}
+
+.active {
+    opacity: 1;
+}
+
+#btn-panel {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <section id="kiit">
+        <div class="light-container">
+            <!-- Create 10 divs to represent each "light" -->
+            <div id="div1" class="light"></div>
+            <div id="div2" class="light"></div>
+            <div id="div3" class="light"></div>
+            <div id="div4" class="light"></div>
+            <div id="div5" class="light"></div>
+            <div id="div6" class="light"></div>
+            
+        </div>
+    </section>
+   
+    <section id="btn-panel">
+        <button id="startbtn">Start</button>
+        <button id="stopbtn">Stop</button>   
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
